@@ -1,4 +1,4 @@
-html {
+* {
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -11,6 +11,9 @@ html {
   }
   .navbar-content {
     background-color: rgb(5, 5, 63);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
   .navbar-brand {
     display: flex;
@@ -29,6 +32,15 @@ html {
     max-width: 100px;
   }
 
+  .container-de-enlaces-del-header{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+  }
+
+  .enlaces-del-header{
+    color: white;
+  }
   
   /* Pagina del index del incio */
   .pagina-de-inicio {
@@ -223,6 +235,166 @@ html {
     justify-content: center;
   }
   
+  /* Pagina de media */
+
+  .main-de-media {
+    background-image: url(../Imagenes/background-media.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+  .main-de-media .titulo-de-media {
+    margin-top: 7.9rem;
+    padding-top: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 3px 3px 10px rgb(35, 48, 193);
+  }
+  .main-de-media .barra-divisora-media {
+    border: 2px solid #ffffff;
+    opacity: 1;
+  }
+  .main-de-media .contenedor-fotos-principales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4rem;
+  }
+  .main-de-media .contenedor-fotos-principales .fotos-principales {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+    box-shadow: 0px 0px 100px rgb(35, 48, 193);
+  }
+  .main-de-media .titulo-de-media-de-videos {
+    padding-top: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 3px 3px 10px rgb(35, 48, 193);
+  }
+  .main-de-media .contenedor-de-fotos-secundarias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4rem;
+  }
+  .main-de-media .contenedor-de-fotos-secundarias .fotos-secundarias {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    object-fit: cover;
+    box-shadow: 0px 0px 100px rgb(35, 48, 193);
+  }
+
+  /* Pagina de nosotros */
+
+  .main-de-sobre-nosotros {
+    background-image: url(../Imagenes/backgroun-sobre-nosotros.jpg);
+  }
+  .main-de-sobre-nosotros .secciones-sobre-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-de-sobre-nosotros .secciones-sobre-nosotros .secciones-de-sobre-nosotros {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 1500px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000538;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px rgb(35, 48, 193);
+  }
+  .main-de-sobre-nosotros .secciones-sobre-nosotros .secciones-de-sobre-nosotros .subtitulo-de-sobre-nosotros {
+    text-align: center;
+    font-family: "scroll-behavior";
+    margin: 1.3rem;
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: transparent;
+  }
+  .main-de-sobre-nosotros .secciones-sobre-nosotros .secciones-de-sobre-nosotros .parrafos-de-sobre-nosotros {
+    font-size: 1rem;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Rubik", "Doodle", "Shadow";
+    margin: 1.5rem;
+  }
+  .main-de-sobre-nosotros .secciones-sobre-nosotros .secciones-de-sobre-nosotros .imagenes-de-las-secciones {
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+  }
+
+  .main-de-contactanos {
+    background-image: url(../Imagenes/background-contactanos.jpg);
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 82.4vh;
+  }
+
+  .main-de-contactanos .container-de-titulo {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  .main-de-contactanos .container-de-titulo .titulo-de-contactanos {
+    font-size: 3rem;
+    color: whitesmoke;
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 20px darkblue;
+    margin-bottom: 2.75rem;
+  }
+  .main-de-contactanos .contendor-de-imagen-y-botones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 2px solid white;
+    width: 400px;
+    height: 550px;
+    margin-bottom: 2.75rem;
+  }
+  .main-de-contactanos .contendor-de-imagen-y-botones .conteiner-de-contactanos {
+    text-align: center;
+  }
+  .main-de-contactanos .contendor-de-imagen-y-botones .conteiner-de-contactanos .titulos-de-contactatos {
+    font-weight: 700;
+    font-size: 2rem;
+    color: rgb(5, 5, 63);
+    text-shadow: 0px 0px 5px #ffffff;
+  }
+  .main-de-contactanos .contendor-de-imagen-y-botones .conteiner-de-contactanos .inputs-de-contactanos {
+    margin-bottom: 2rem;
+    border-radius: 5px;
+  }
+  .main-de-contactanos .contendor-de-imagen-y-botones .boton-de-enviar-contactanos {
+    color: #ffffff;
+    text-shadow: 0px 0px 2px #ffffff;
+    font-size: 1.4rem;
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    transition: 0.3s ease-in-out;
+  }
+  .main-de-contactanos .contendor-de-imagen-y-botones .boton-de-enviar-contactanos:hover {
+    transform: scale(1.2);
+  }
   @media (min-width: 280px){
 
     .navbar-brand h3{
